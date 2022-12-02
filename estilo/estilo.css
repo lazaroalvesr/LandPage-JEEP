@@ -1,0 +1,432 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+html {
+    scroll-behavior: smooth;
+
+
+}
+
+:target {
+    scroll-margin-top: .8em;
+
+}
+
+body {
+    background: black;
+    font-family: 'Inter', sans-serif;
+
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+.logo {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    background: #63639100;
+    height: 8vh;
+}
+
+.nav-list li a {
+    color: #E6E8FA;
+    font-size: 18px;
+    white-space: 12px;
+    margin: 0 30px;
+}
+
+main {
+    background: #63639100;
+    color: #fff;
+    margin-top: 14%;
+    margin-left: 11%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 25px;
+    font-weight: 400;
+    text-shadow: 1px 9px 10px rgba(0, 0, 0, 0.25);
+
+}
+
+.classe {
+    display: flex;
+
+}
+
+
+
+.nav-list {
+    list-style: none;
+    display: flex;
+
+}
+
+.nav-list li {
+    margin-top: 19px;
+    border-radius: 5px 10px;
+    letter-spacing: 3px;
+    margin-left: 32px;
+    font-size: 16px;
+}
+
+.mobile-menu {
+    display: none;
+    cursor: pointer;
+}
+
+.mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
+    transition: 0.3s;
+}
+
+@media (max-width: 700px) {
+
+    body {
+        overflow-x: hidden;
+        padding-top: 1;
+    }
+
+    .nav-list {
+        position: fixed;
+        top: 8vh;
+        right: 0;
+        width: 50vw;
+        height: 92vh;
+        background: #23232e;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+    }
+
+    .nav-list li {
+        margin-left: 0;
+        opacity: 0;
+    }
+
+    .mobile-menu {
+        display: block;
+        padding-left: 19.5em;
+        position: fixed
+    }
+
+    .classe {
+        display: flex;
+    }
+
+    h1 {
+
+        margin-right: 50px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-size: 50px;
+        font-weight: 400;
+        text-shadow: 1px 9px 10px rgba(0, 0, 0, 0.25);
+
+
+    }
+
+    .classe i.fa-solid {
+        margin-top: 6.9em;
+        margin-left: 4.8em;
+        font-size: 1.5em;
+        color: blue;
+        position: absolute;
+
+
+    }
+
+    .classe #twitter {
+        position: absolute;
+        margin-top: 8.8em;
+        font-size: 1.5em;
+        padding-left: 1.9em;
+        color: blue;
+    }
+
+    .classe #linkedin {
+        position: absolute;
+        margin-top: 8.8em;
+        font-size: 1.5em;
+        padding-left: 3.7em;
+        color: blue;
+    }
+
+    .classe #instagram {
+        position: absolute;
+        margin-top: 8.8em;
+        font-size: 1.5em;
+        left: 12%;
+        color: blue;
+    }
+
+    .classe #github {
+        position: absolute;
+        margin-top: 8.8em;
+        font-size: 1.5em;
+        padding-left: 5.3em;
+        color: blue;
+    }
+
+
+    #Sobre .Imagem img {
+        display: inline-block;
+        margin-top: 30%;
+        width: 1%;
+        height: 2px;
+
+    }
+
+    #Sobre .Texto {
+        flex-direction: column;
+        position: relative;
+        bottom: 6em;
+        padding-right: 1%;
+
+    }
+
+    #info {
+        position: absolute;
+        color: #fff;
+        font-size: 30px;
+        text-align: center;
+        padding-top: 12em;
+        left: 10%;
+    }
+
+    #Sobre .Texto p {
+        display: inline-block;
+        position: absolute;
+        margin-top: 24em;
+        right: 1em;
+        padding-left: 20px;
+    }
+
+    #Projetos .projects img {
+        display: flex;
+        margin-top: 1%;
+        margin-right: 200px;
+        padding: 9%;
+        font: 2px;
+        padding-left: 1%;
+
+        width: 100%;
+        height: 100%;
+
+        border-radius: 10px;
+
+
+    }
+
+
+    footer {
+        padding-top: 40%;
+        position: relative;
+        text-align: start;
+        text-decoration: none;
+        color: #fff;
+        bottom: 0;
+        margin-right: 30%;
+        left: 9.5%;
+    }
+
+    #Sobre a {
+        font-size: 20px;
+        cursor: pointer;
+        width: 150px;
+        background: transparent;
+        text-align: center;
+        display: inline-block;
+        margin-top: 2px;
+        margin-left: 22%;
+        position: relative;
+        background: #23232E;
+        border: 1px solid #FF0000;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 5px;
+        bottom: 2em;
+        left: 5.6%;
+    }
+
+
+}
+
+.nav-list.active {
+    transform: translateX(0);
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+
+}
+
+.mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .line2 {
+    opacity: 0;
+}
+
+.mobile-menu.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+}
+
+.classe .Imagem img {
+    width: 400px;
+    padding-left: 55%;
+
+}
+
+#Fotos {
+    background: #63639100;
+
+}
+#Fotos{
+    position: relative;
+    display: flex;
+}
+.item1 img {
+    position: relative;
+    width: 30%;
+    height: auto;
+    padding-left: 18%;
+    padding-top: 3%;
+}
+
+.item2 img {
+    position: relative;
+    display: flex;
+    width: 39%;
+    height: auto;
+    padding-left: 44%;
+}
+
+.item3 img {
+    position: relative;
+    width: 39%;
+    height: auto;
+    padding-left: 10%;
+    padding-top: 10%;
+}
+
+.item4 img {
+    position: absolute;
+    width: 39%;
+    height: auto;
+    padding-left: 55%;
+    top: 40em;
+    
+
+}
+
+#tecnica {
+    position: absolute;
+    display: block;
+}
+
+#tecnica h1 {
+    color: #FF0000;
+    padding-left: 12px;
+    font-size: 30px;
+}
+
+p {
+    padding-left: 14px;
+    padding-top: 12px;
+    font-size: 22px;
+}
+
+#info {
+    position: absolute;
+    display: flex;
+
+}
+
+#info p {
+    display: flex;
+    position: relative;
+    margin-top: 3%;
+    padding-left: 27em;
+    margin-bottom: 9%;
+}
+
+#info h1 {
+    color: #FF0000;
+    padding-left: 49%;
+    position: absolute;
+    padding-bottom: 9%;
+    font-size: 25px;
+
+
+}
+
+#tec {
+    position: relative;
+    display: block;
+}
+
+#tec h1 {
+    color: red;
+    font-size: 22px;
+    position: absolute;
+    padding-left: 12px;
+    padding-top: 15em;
+}
+
+#tec p {
+    font-size: 12px;
+    padding-top: 27%;
+    font-size: 20px;
+}
+
+#Ficha {
+    padding-top: 10%;
+    color: #fff;
+    background: #63639100;
+
+
+}
+
+footer {
+    margin-top: 20%;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    bottom: 0;
+    padding-left: 20px;
+    font-size: 22px;
+}
